@@ -24,4 +24,13 @@ describe('args', function() {
     args([1,2])(fn)('a','b','c')
     expect(result).to.be.eql(['b', 'c'])
   })
+
+  it('should call function with specified context', function() {
+    var fn = function(){ result = this }
+      , o = {}
+      , result
+
+    args([1,2])(fn, o)('a','b','c')
+    expect(result).to.be.eql(o)
+  })
 })
