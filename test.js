@@ -33,4 +33,8 @@ describe('args', function() {
     args([1,2])(fn, o)('a','b','c')
     expect(result).to.be.eql(o)
   })
+
+  it('should return first arg', function() {
+    expect(args([1,2])(String)('a','b','c')).to.be.eql('b')
+  })
 })
