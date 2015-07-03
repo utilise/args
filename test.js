@@ -34,7 +34,7 @@ describe('args', function() {
     expect(result).to.be.eql(o)
   })
 
-  it('should return first arg', function() {
+  it('should return value of function', function() {
     expect(args([1,2])(String)('a','b','c')).to.be.eql('b')
   })
 })

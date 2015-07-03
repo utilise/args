@@ -8,7 +8,7 @@ module.exports = function args(indices) {
         , a = to.arr(arguments)
                 .filter(function(d,x){ return is.in(i)(x) })
 
-      return fn.apply(ctx || this, a), a[0]
+      return fn.apply(ctx || this, a)
     }
   }
 }
