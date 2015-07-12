@@ -3,6 +3,7 @@ var expect = require('chai').expect
   , to     = require('to')
 
 describe('args', function() {
+
   it('should call function with specified arg', function() {
     var fn = function(){ result = to.arr(arguments) }
       , result
@@ -34,7 +35,12 @@ describe('args', function() {
     expect(result).to.be.eql(o)
   })
 
-  it('should return value of function', function() {
+  it('should return result of function', function() {
     expect(args([1,2])(String)('a','b','c')).to.be.eql('b')
   })
+
+  it('should pass no args', function() {
+    expect(args()(String)('a','b','c')).to.be.eql('')
+  })
+
 })
