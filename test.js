@@ -1,6 +1,6 @@
 var expect = require('chai').expect
   , args   = require('./')
-  , to     = require('to')
+  , to     = require('utilise.to')
 
 describe('args', function() {
 

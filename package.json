@@ -1,5 +1,5 @@
 {
-  "name": "args",
+  "name": "utilise.args",
   "version": "0.0.0",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "mocha-lcov-reporter": "0.0.2"
   },
   "dependencies": {
-    "to": "git+https://github.com/utilise/to.git",
-    "is": "git+https://github.com/utilise/is.git"
+    "utilise.to": "*",
+    "utilise.is": "*"
   }
 }
